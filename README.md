@@ -56,15 +56,21 @@ Follow the on-screen prompts to either install or uninstall ATIPAC.
 
 Running ATIPAC
 Once ATIPAC is installed and Tor is running, you can begin using it. Follow these steps to start the tool:
+Step 1:
+Configure SOCKS Proxy: To route your traffic through the Tor network, you need to set up your application or system to use the Tor SOCKS proxy, which listens on 127.0.0.1:9050 by default.
+Change your SOCKS proxy: In ATIPAC, you’ll be prompted to change your SOCKS proxy to 127.0.0.1:9050. This means that your internet traffic will be routed through the Tor network.
+To configure your SOCKS proxy:
+For browsers (e.g., Firefox or Chrome), you will need to go into the proxy settings and set the SOCKS5 proxy to 127.0.0.1:9050.
+For command-line tools (e.g., curl, wget), use the --proxy option and specify 127.0.0.1:9050.
 
-Step 1: Start ATIPAC
+Step 2: Start ATIPAC
 To begin, run the ATIPAC script in your terminal:
 
 python3 ATIPAC.py
 
 Once you execute the script, it will initiate and display a colorful, informative terminal output thanks to the colorama module.
 
-Step 2: Configure IP Change Settings
+Step 3: Configure IP Change Settings
 ATIPAC will ask you for two key inputs:
 
 Time Interval for IP Changes: This is how often you want your IP to change. The value is in seconds. For example:
@@ -80,13 +86,13 @@ Example prompt:
 
 [+] How many times do you want to change your IP? (default = infinite) >> 0
 
-Step 3: IP Rotation Begins
+Step 4: IP Rotation Begins
 Once you provide the interval and number of changes, ATIPAC will begin rotating your IP addresses automatically. The script will periodically display the new IP addresses as they are rotated through Tor’s exit nodes:
 
 [+] Changing IP...
 [+] Your new IP is: 123.456.789.012
 
-Step 4: Stopping the Script
+Step 5: Stopping the Script
 To stop ATIPAC from changing your IP, simply press Ctrl + C in the terminal. This will terminate the script, and the IP rotation process will stop.
 
 Uninstalling ATIPAC
