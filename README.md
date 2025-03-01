@@ -146,3 +146,10 @@ Logging and error handling ensure smooth operation with clear feedback in the te
 
 Contributing
 ATIPAC is an open-source project, and we welcome contributions! If you encounter any bugs, want to suggest a new feature, or improve the documentation, feel free to open an issue or submit a pull request, you can also email me at Frosty-the-dev@outlook.com or message frosty_v2.0.0.exe on Discord.
+
+
+
+MUCH MUCH LOVE, MANY MANY HEARTS, AND A LOT OF THANKS TO FDX100 on GitHub for his original script that i've built upon on. (https://github.com/FDX100/Auto_Tor_IP_changer)
+
+
+now go and have a secure day!
